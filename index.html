@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+
+    <!-- font awesome cnd link -->
+    <script src="https://kit.fontawesome.com/7178ddedfb.js" crossorigin="anonymous"></script>
+    <!-- tailwind cdn link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="mt-20 section">
+            <div class="container m-auto w-3/4">
+                <div class="calculator w-2/4 m-auto rounded-3xl">
+                    <input type="text" placeholder="0" id="input-field"
+                        class="block border m-auto text-right outline-none w-3/4 px-4 py-2 rounded-full text-2xl font-bold">
+                    <div class="grid grid-cols-4 justify-items-center mt-8 w-3/4 mx-auto bg-transparent buttons">
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            id="clear-button">C</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('%')">%</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('X')"><i class="fas fa-backspace"></i></button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-bold text-xl"
+                            onclick="getInputValue('/')">/</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('7')">7</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('8')">8</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('9')">9</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-bold text-xl"
+                            onclick="getInputValue('x')">x</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('4')">4</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('5')">5</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('6')">6</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-bold text-xl"
+                            onclick="getInputValue('-')">-</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('1')">1</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('2')">2</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('3')">3</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-bold text-xl"
+                            onclick="getInputValue('+')">+</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('00')">00</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('0')">0</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 mb-3 flex justify-center items-center font-semibold text-xl"
+                            onclick="getInputValue('.')">.</button>
+                        <button
+                            class="rounded-full border h-12 w-12 p-4 flex justify-center items-center font-bold text-xl"
+                            onclick="calculate()">=</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- custom js link -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
